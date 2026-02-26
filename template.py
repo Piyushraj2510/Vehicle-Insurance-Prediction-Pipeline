@@ -42,6 +42,7 @@ list_of_files = [
     "pyproject.toml",
     "config/model.yaml",
     "config/schema.yaml",
+    "static/style.css",
 ]
 
 
