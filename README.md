@@ -73,10 +73,10 @@ Data → Preprocessing → Model Training → Model Evaluation → Saved Model �
 
 Insurance companies and platforms can leverage this project to:
 
-✅ **Predict Claim Approval Probability** – Estimate likelihood of claim approvals based on historical data. :contentReference[oaicite:2]{index=2}  
-✅ **Estimate Risk Levels** – Identify high-risk claims requiring manual review. :contentReference[oaicite:3]{index=3}  
-✅ **Reduce Fraudulent Claims** – Flag suspicious claims automatically. :contentReference[oaicite:4]{index=4}  
-✅ **Automate Claim Processing Decisions** – Reduce manual workload for claim adjusters. :contentReference[oaicite:5]{index=5}
+✅ **Predict Claim Approval Probability** – Estimate likelihood of claim approvals based on historical data. 
+✅ **Estimate Risk Levels** – Identify high-risk claims requiring manual review.  
+✅ **Reduce Fraudulent Claims** – Flag suspicious claims automatically. 
+✅ **Automate Claim Processing Decisions** – Reduce manual workload for claim adjusters.
 
 ---
 ## ⚙️ How to Run Locally
@@ -98,3 +98,68 @@ Make sure you have:
 ```bash
 git clone https://github.com/Piyushraj2510/ClaimGuard-Ops.git
 cd ClaimGuard-Ops
+
+---
+### 🔹 Install Dependencies
+
+Using a Python virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate      # Mac / Linux
+venv\Scripts\activate         # Windows
+
+```bash
+pip install -r requirements.txt
+
+---
+###🔹 Run the API
+
+```bash
+uvicorn app:app --reload
+
+Visit: http://localhost:8000 in your browser.
+
+###🔹 Using Docker
+
+Build and run the container:
+
+```bash
+docker build -t claimguard-ops .
+docker run -p 8000:8000 claimguard-ops
+
+Now open: http://localhost:8000
+
+This ensures your environment mirrors the production setup.
+
+##📝 Contribute 🚀
+
+We welcome contributions! Here’s how you can help improve ClaimGuard-Ops:
+
+###📌 Suggested Improvements
+
+✔ Add more datasets for diverse insurance scenarios
+✔ Improve model accuracy with new algorithms
+✔ Add frontend UI for visual predictions
+✔ Expand CI/CD to include automated model validation
+
+###💡 How to Submit a Pull Request
+
+1.Fork the repo
+
+2.Create your feature branch
+
+```bash
+git checkout -b feature/my-awesome-feature
+
+3.Commit your changes
+
+```bash
+git commit -m "Add awesome new feature"
+
+4.Push to your fork
+
+```bash
+git push origin feature/my-awesome-feature
+
+5.Open a Pull Request describing your change
