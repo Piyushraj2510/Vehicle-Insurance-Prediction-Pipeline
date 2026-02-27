@@ -73,10 +73,10 @@ Data → Preprocessing → Model Training → Model Evaluation → Saved Model �
 
 Insurance companies and platforms can leverage this project to:
 
-✅ **Predict Claim Approval Probability** – Estimate likelihood of claim approvals based on historical data. 
-✅ **Estimate Risk Levels** – Identify high-risk claims requiring manual review.  
-✅ **Reduce Fraudulent Claims** – Flag suspicious claims automatically. 
-✅ **Automate Claim Processing Decisions** – Reduce manual workload for claim adjusters.
+✅ **Predict Claim Approval Probability** – Estimate likelihood of claim approvals based on historical data.</br> 
+✅ **Estimate Risk Levels** – Identify high-risk claims requiring manual review. </br> 
+✅ **Reduce Fraudulent Claims** – Flag suspicious claims automatically. </br>
+✅ **Automate Claim Processing Decisions** – Reduce manual workload for claim adjusters.</br>
 
 ---
 ## ⚙️ How to Run Locally
@@ -98,7 +98,7 @@ Make sure you have:
 ```bash
 git clone https://github.com/Piyushraj2510/ClaimGuard-Ops.git
 cd ClaimGuard-Ops
-
+```
 ---
 ### 🔹 Install Dependencies
 
@@ -108,16 +108,16 @@ Using a Python virtual environment:
 python -m venv venv
 source venv/bin/activate      # Mac / Linux
 venv\Scripts\activate         # Windows
-
+```
 ```bash
 pip install -r requirements.txt
-
+```
 ---
 ###🔹 Run the API
 
 ```bash
 uvicorn app:app --reload
-
+```
 Visit: http://localhost:8000 in your browser.
 
 ###🔹 Using Docker
@@ -127,7 +127,7 @@ Build and run the container:
 ```bash
 docker build -t claimguard-ops .
 docker run -p 8000:8000 claimguard-ops
-
+```
 Now open: http://localhost:8000
 
 This ensures your environment mirrors the production setup.
@@ -151,15 +151,17 @@ We welcome contributions! Here’s how you can help improve ClaimGuard-Ops:
 
 ```bash
 git checkout -b feature/my-awesome-feature
-
+```
 3.Commit your changes
 
 ```bash
 git commit -m "Add awesome new feature"
-
+```
 4.Push to your fork
 
 ```bash
 git push origin feature/my-awesome-feature
+```
+5.Open a Pull Request describing your chan
 
-5.Open a Pull Request describing your change
+ge
