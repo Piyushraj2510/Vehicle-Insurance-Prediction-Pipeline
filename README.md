@@ -61,7 +61,6 @@ This project demonstrates how machine learning systems move from experimentation
 <p>
 Data → Preprocessing → Model Training → Model Evaluation → Saved Model → FastAPI → Docker → Deployment
 </p>
-add
 ## 📊 Use Case
 
 <p>
